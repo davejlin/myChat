@@ -7,12 +7,17 @@
 //
 
 import Foundation
+import RxSwift
 
 class MockUserRetriever: UserRetrieverProtocol {
     
     var userToReturn: UserProtocol? = nil
     
-    func getUser() -> UserProtocol? {
-        return userToReturn
+    func getUser() -> Observable<UserProtocol?> {
+        return Observable.create { observer in
+            observer.onNext(self.userToReturn)
+            return Disposables.create()
+        }
     }
+
 }

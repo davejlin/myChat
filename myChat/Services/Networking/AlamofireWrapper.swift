@@ -8,9 +8,14 @@
 
 import Foundation
 import Alamofire
+import AlamofireObjectMapper
+import ObjectMapper
 
 protocol NetworkingProtocol {
     func requestAndResponseJSON(_ httpMethod: Alamofire.HTTPMethod, fullServerAddress: String, headers: [String:String], parameters: [String:Any], encoding: ParameterEncoding, completionHandler: @escaping (DataResponse<Any>) -> Void )
+    
+    func requestAndResponseObject<T: Mappable>(_ httpMethod: Alamofire.HTTPMethod, fullServerAddress: String,
+                                  headers: [String:String], parameters: [String:Any], encoding: ParameterEncoding, completionHandler: @escaping (DataResponse<T>) -> Void)
 }
 
 class AlamofireWrapper: NetworkingProtocol {
@@ -21,5 +26,9 @@ class AlamofireWrapper: NetworkingProtocol {
 
     func requestAndResponseJSON(_ httpMethod: Alamofire.HTTPMethod, fullServerAddress: String, headers: [String:String], parameters: [String:Any], encoding: ParameterEncoding, completionHandler: @escaping (DataResponse<Any>) -> Void ) {
         Alamofire.request(fullServerAddress, method: httpMethod, parameters: parameters, encoding: encoding, headers: headers).responseJSON(queue: responseQueue, completionHandler: completionHandler)
+    }
+    
+    func requestAndResponseObject<T: Mappable>(_ httpMethod: Alamofire.HTTPMethod, fullServerAddress: String, headers: [String:String], parameters: [String:Any], encoding: ParameterEncoding, completionHandler: @escaping (DataResponse<T>) -> Void) {
+        Alamofire.request(fullServerAddress, method: httpMethod, parameters: parameters, encoding: encoding, headers: headers).responseObject(queue: responseQueue, completionHandler: completionHandler)
     }
 }

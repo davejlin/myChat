@@ -8,11 +8,15 @@
 
 import Foundation
 import Alamofire
+import ObjectMapper
 
 class MockAlamofireWrapper: NetworkingProtocol {
     
-    func requestAndResponseJSON(_ httpMethod: Alamofire.HTTPMethod, fullServerAddress: String,
-                                headers: [String:String], parameters: [String:Any], encoding: ParameterEncoding, completionHandler: @escaping (DataResponse<Any>) -> Void ) {
+    func requestAndResponseJSON(_ httpMethod: Alamofire.HTTPMethod, fullServerAddress: String, headers: [String:String], parameters: [String:Any], encoding: ParameterEncoding, completionHandler: @escaping (DataResponse<Any>) -> Void ) {
+        
+    }
+    
+    func requestAndResponseObject<T: Mappable>(_ httpMethod: Alamofire.HTTPMethod, fullServerAddress: String, headers: [String:String], parameters: [String:Any], encoding: ParameterEncoding, completionHandler: @escaping (DataResponse<T>) -> Void) {
         
     }
 }

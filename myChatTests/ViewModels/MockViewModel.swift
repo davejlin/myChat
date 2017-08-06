@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import RxSwift
 
 class MockViewModel: ViewModelProtocol {
-    
+    let currentUserName = Variable<String?>(nil)
 }

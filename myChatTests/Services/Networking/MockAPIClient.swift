@@ -7,7 +7,12 @@
 //
 
 import Foundation
+import RxSwift
 
 class MockAPIClient: APIClientProtocol {
-    
+    func getUser() -> Observable<UserMappable?> {
+        return Observable.create { observer in
+            return Disposables.create()
+        }
+    }
 }
