@@ -10,8 +10,7 @@ import Foundation
 import Alamofire
 
 protocol NetworkingProtocol {
-    func requestAndResponseJSON(_ httpMethod: Alamofire.HTTPMethod, fullServerAddress: String,
-                                headers: [String:String], parameters: [String:Any], encoding: ParameterEncoding, completionHandler: @escaping (DataResponse<Any>) -> Void )
+    func requestAndResponseJSON(_ httpMethod: Alamofire.HTTPMethod, fullServerAddress: String, headers: [String:String], parameters: [String:Any], encoding: ParameterEncoding, completionHandler: @escaping (DataResponse<Any>) -> Void )
 }
 
 class AlamofireWrapper: NetworkingProtocol {
@@ -20,8 +19,7 @@ class AlamofireWrapper: NetworkingProtocol {
     init() {
     }
 
-    func requestAndResponseJSON(_ httpMethod: Alamofire.HTTPMethod, fullServerAddress: String,
-                                headers: [String:String], parameters: [String:Any], encoding: ParameterEncoding, completionHandler: @escaping (DataResponse<Any>) -> Void ) {
+    func requestAndResponseJSON(_ httpMethod: Alamofire.HTTPMethod, fullServerAddress: String, headers: [String:String], parameters: [String:Any], encoding: ParameterEncoding, completionHandler: @escaping (DataResponse<Any>) -> Void ) {
         Alamofire.request(fullServerAddress, method: httpMethod, parameters: parameters, encoding: encoding, headers: headers).responseJSON(queue: responseQueue, completionHandler: completionHandler)
     }
 }

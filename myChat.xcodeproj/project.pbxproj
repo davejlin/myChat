@@ -8,19 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		189BB1FF1F36C08500074D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BB1FE1F36C08500074D14 /* AppDelegate.swift */; };
-		189BB2011F36C08500074D14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BB2001F36C08500074D14 /* ViewController.swift */; };
 		189BB2041F36C08500074D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189BB2021F36C08500074D14 /* Main.storyboard */; };
 		189BB2061F36C08500074D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189BB2051F36C08500074D14 /* Assets.xcassets */; };
 		189BB2091F36C08500074D14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189BB2071F36C08500074D14 /* LaunchScreen.storyboard */; };
-		189BB2141F36C08500074D14 /* myChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BB2131F36C08500074D14 /* myChatTests.swift */; };
 		189BB21F1F36C08500074D14 /* myChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BB21E1F36C08500074D14 /* myChatUITests.swift */; };
-		18E2D1721F36C23300594D2A /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1701F36C23300594D2A /* AlamofireWrapper.swift */; };
-		18E2D1731F36C23300594D2A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1711F36C23300594D2A /* APIClient.swift */; };
-		18E2D1751F36C23D00594D2A /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1741F36C23D00594D2A /* MainAssembly.swift */; };
-		18E2D17A1F36C2AB00594D2A /* MockAlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1781F36C2AB00594D2A /* MockAlamofireWrapper.swift */; };
-		18E2D17B1F36C2AB00594D2A /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1791F36C2AB00594D2A /* MockAPIClient.swift */; };
-		18E2D17C1F36C2E600594D2A /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1701F36C23300594D2A /* AlamofireWrapper.swift */; };
-		18E2D17D1F36C2E900594D2A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1711F36C23300594D2A /* APIClient.swift */; };
+		18E2D1811F36C3E300594D2A /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1801F36C3E300594D2A /* MainAssembly.swift */; };
+		18E2D1841F36C3ED00594D2A /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1821F36C3ED00594D2A /* AlamofireWrapper.swift */; };
+		18E2D1851F36C3ED00594D2A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1831F36C3ED00594D2A /* APIClient.swift */; };
+		18E2D1881F36C3F900594D2A /* MockAlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1861F36C3F900594D2A /* MockAlamofireWrapper.swift */; };
+		18E2D1891F36C3F900594D2A /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1871F36C3F900594D2A /* MockAPIClient.swift */; };
+		18E2D18A1F36C40400594D2A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1831F36C3ED00594D2A /* APIClient.swift */; };
+		18E2D18B1F36C40700594D2A /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1821F36C3ED00594D2A /* AlamofireWrapper.swift */; };
+		18FCC7C21F36C5B800CB71A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FCC7C11F36C5B800CB71A5 /* ViewController.swift */; };
+		18FCC7C41F36C6C600CB71A5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FCC7C31F36C6C600CB71A5 /* ViewModel.swift */; };
+		18FCC7C51F36C6C600CB71A5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FCC7C31F36C6C600CB71A5 /* ViewModel.swift */; };
 		620F91B5C3C193F98A191E53 /* Pods_myChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E998F6DE4835841EDB1AF8 /* Pods_myChat.framework */; };
 		EF98DE1D914C46D6AF335BB0 /* Pods_myChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7825D835CE5B20CB1EEE873E /* Pods_myChatTests.framework */; };
 /* End PBXBuildFile section */
@@ -45,22 +46,22 @@
 /* Begin PBXFileReference section */
 		189BB1FB1F36C08500074D14 /* myChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189BB1FE1F36C08500074D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		189BB2001F36C08500074D14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		189BB2031F36C08500074D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		189BB2051F36C08500074D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		189BB2081F36C08500074D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		189BB20A1F36C08500074D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		189BB20F1F36C08500074D14 /* myChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		189BB2131F36C08500074D14 /* myChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myChatTests.swift; sourceTree = "<group>"; };
 		189BB2151F36C08500074D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		189BB21A1F36C08500074D14 /* myChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		189BB21E1F36C08500074D14 /* myChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myChatUITests.swift; sourceTree = "<group>"; };
 		189BB2201F36C08500074D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18E2D1701F36C23300594D2A /* AlamofireWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireWrapper.swift; path = Networking/AlamofireWrapper.swift; sourceTree = "<group>"; };
-		18E2D1711F36C23300594D2A /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Networking/APIClient.swift; sourceTree = "<group>"; };
-		18E2D1741F36C23D00594D2A /* MainAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainAssembly.swift; path = DIAssemblies/MainAssembly.swift; sourceTree = "<group>"; };
-		18E2D1781F36C2AB00594D2A /* MockAlamofireWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockAlamofireWrapper.swift; path = Networking/MockAlamofireWrapper.swift; sourceTree = "<group>"; };
-		18E2D1791F36C2AB00594D2A /* MockAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockAPIClient.swift; path = Networking/MockAPIClient.swift; sourceTree = "<group>"; };
+		18E2D1801F36C3E300594D2A /* MainAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainAssembly.swift; path = Services/DIAssemblies/MainAssembly.swift; sourceTree = "<group>"; };
+		18E2D1821F36C3ED00594D2A /* AlamofireWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireWrapper.swift; path = Services/Networking/AlamofireWrapper.swift; sourceTree = "<group>"; };
+		18E2D1831F36C3ED00594D2A /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Services/Networking/APIClient.swift; sourceTree = "<group>"; };
+		18E2D1861F36C3F900594D2A /* MockAlamofireWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockAlamofireWrapper.swift; path = Services/Networking/MockAlamofireWrapper.swift; sourceTree = "<group>"; };
+		18E2D1871F36C3F900594D2A /* MockAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockAPIClient.swift; path = Services/Networking/MockAPIClient.swift; sourceTree = "<group>"; };
+		18FCC7C11F36C5B800CB71A5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ViewControllers/ViewController.swift; sourceTree = "<group>"; };
+		18FCC7C31F36C6C600CB71A5 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModel.swift; path = ViewModels/ViewModel.swift; sourceTree = "<group>"; };
 		3D7BA0651FA55E72C1CFE2E8 /* Pods-myChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-myChat/Pods-myChat.release.xcconfig"; sourceTree = "<group>"; };
 		7825D835CE5B20CB1EEE873E /* Pods_myChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6ECD496C079B656D2FB109 /* Pods-myChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myChatTests/Pods-myChatTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,14 +122,13 @@
 		189BB1FD1F36C08500074D14 /* myChat */ = {
 			isa = PBXGroup;
 			children = (
-				18E2D16F1F36C21F00594D2A /* DIAssemblies */,
-				18E2D16E1F36C20400594D2A /* Networking */,
 				189BB1FE1F36C08500074D14 /* AppDelegate.swift */,
-				189BB2001F36C08500074D14 /* ViewController.swift */,
-				189BB2021F36C08500074D14 /* Main.storyboard */,
 				189BB2051F36C08500074D14 /* Assets.xcassets */,
-				189BB2071F36C08500074D14 /* LaunchScreen.storyboard */,
 				189BB20A1F36C08500074D14 /* Info.plist */,
+				18FCC7C01F36C4DC00CB71A5 /* Storyboards */,
+				18E2D17E1F36C35100594D2A /* Services */,
+				18FCC7BE1F36C4B200CB71A5 /* ViewModels */,
+				18FCC7BF1F36C4BF00CB71A5 /* ViewControllers */,
 			);
 			path = myChat;
 			sourceTree = "<group>";
@@ -136,8 +136,7 @@
 		189BB2121F36C08500074D14 /* myChatTests */ = {
 			isa = PBXGroup;
 			children = (
-				18E2D1761F36C24A00594D2A /* Networking */,
-				189BB2131F36C08500074D14 /* myChatTests.swift */,
+				18E2D17F1F36C37000594D2A /* Services */,
 				189BB2151F36C08500074D14 /* Info.plist */,
 			);
 			path = myChatTests;
@@ -155,8 +154,8 @@
 		18E2D16E1F36C20400594D2A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				18E2D1701F36C23300594D2A /* AlamofireWrapper.swift */,
-				18E2D1711F36C23300594D2A /* APIClient.swift */,
+				18E2D1821F36C3ED00594D2A /* AlamofireWrapper.swift */,
+				18E2D1831F36C3ED00594D2A /* APIClient.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -164,7 +163,7 @@
 		18E2D16F1F36C21F00594D2A /* DIAssemblies */ = {
 			isa = PBXGroup;
 			children = (
-				18E2D1741F36C23D00594D2A /* MainAssembly.swift */,
+				18E2D1801F36C3E300594D2A /* MainAssembly.swift */,
 			);
 			name = DIAssemblies;
 			sourceTree = "<group>";
@@ -172,10 +171,52 @@
 		18E2D1761F36C24A00594D2A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				18E2D1781F36C2AB00594D2A /* MockAlamofireWrapper.swift */,
-				18E2D1791F36C2AB00594D2A /* MockAPIClient.swift */,
+				18E2D1861F36C3F900594D2A /* MockAlamofireWrapper.swift */,
+				18E2D1871F36C3F900594D2A /* MockAPIClient.swift */,
 			);
 			name = Networking;
+			sourceTree = "<group>";
+		};
+		18E2D17E1F36C35100594D2A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				18E2D16F1F36C21F00594D2A /* DIAssemblies */,
+				18E2D16E1F36C20400594D2A /* Networking */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		18E2D17F1F36C37000594D2A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				18E2D1761F36C24A00594D2A /* Networking */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		18FCC7BE1F36C4B200CB71A5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				18FCC7C31F36C6C600CB71A5 /* ViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		18FCC7BF1F36C4BF00CB71A5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18FCC7C11F36C5B800CB71A5 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18FCC7C01F36C4DC00CB71A5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				189BB2021F36C08500074D14 /* Main.storyboard */,
+				189BB2071F36C08500074D14 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 		3439E3B76B17EB97F259E8E3 /* Pods */ = {
@@ -366,6 +407,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -373,6 +415,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -456,11 +499,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E2D1751F36C23D00594D2A /* MainAssembly.swift in Sources */,
-				189BB2011F36C08500074D14 /* ViewController.swift in Sources */,
+				18FCC7C21F36C5B800CB71A5 /* ViewController.swift in Sources */,
+				18E2D1811F36C3E300594D2A /* MainAssembly.swift in Sources */,
+				18E2D1841F36C3ED00594D2A /* AlamofireWrapper.swift in Sources */,
+				18E2D1851F36C3ED00594D2A /* APIClient.swift in Sources */,
+				18FCC7C41F36C6C600CB71A5 /* ViewModel.swift in Sources */,
 				189BB1FF1F36C08500074D14 /* AppDelegate.swift in Sources */,
-				18E2D1721F36C23300594D2A /* AlamofireWrapper.swift in Sources */,
-				18E2D1731F36C23300594D2A /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,11 +512,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E2D17A1F36C2AB00594D2A /* MockAlamofireWrapper.swift in Sources */,
-				189BB2141F36C08500074D14 /* myChatTests.swift in Sources */,
-				18E2D17C1F36C2E600594D2A /* AlamofireWrapper.swift in Sources */,
-				18E2D17D1F36C2E900594D2A /* APIClient.swift in Sources */,
-				18E2D17B1F36C2AB00594D2A /* MockAPIClient.swift in Sources */,
+				18FCC7C51F36C6C600CB71A5 /* ViewModel.swift in Sources */,
+				18E2D1881F36C3F900594D2A /* MockAlamofireWrapper.swift in Sources */,
+				18E2D18B1F36C40700594D2A /* AlamofireWrapper.swift in Sources */,
+				18E2D1891F36C3F900594D2A /* MockAPIClient.swift in Sources */,
+				18E2D18A1F36C40400594D2A /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
