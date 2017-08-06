@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		1814C2CE1F3792C40061C52C /* UserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2CD1F3792C40061C52C /* UserFactory.swift */; };
 		1814C2CF1F3792C60061C52C /* UserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2CD1F3792C40061C52C /* UserFactory.swift */; };
-		1814C2D21F3793030061C52C /* MockUserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2D11F3793030061C52C /* MockUserFactory.swift */; };
+		1814C2D41F3794D20061C52C /* MockUserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2D31F3794D20061C52C /* MockUserFactory.swift */; };
+		1814C2D61F3794E50061C52C /* UserFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2D51F3794E50061C52C /* UserFactoryTests.swift */; };
 		189BB1FF1F36C08500074D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BB1FE1F36C08500074D14 /* AppDelegate.swift */; };
 		189BB2041F36C08500074D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189BB2021F36C08500074D14 /* Main.storyboard */; };
 		189BB2061F36C08500074D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189BB2051F36C08500074D14 /* Assets.xcassets */; };
@@ -51,7 +52,8 @@
 
 /* Begin PBXFileReference section */
 		1814C2CD1F3792C40061C52C /* UserFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserFactory.swift; path = Services/Factories/UserFactory.swift; sourceTree = "<group>"; };
-		1814C2D11F3793030061C52C /* MockUserFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockUserFactory.swift; path = Factories/MockUserFactory.swift; sourceTree = "<group>"; };
+		1814C2D31F3794D20061C52C /* MockUserFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockUserFactory.swift; path = Services/Factories/MockUserFactory.swift; sourceTree = "<group>"; };
+		1814C2D51F3794E50061C52C /* UserFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserFactoryTests.swift; path = Services/Factories/UserFactoryTests.swift; sourceTree = "<group>"; };
 		189BB1FB1F36C08500074D14 /* myChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189BB1FE1F36C08500074D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		189BB2031F36C08500074D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,7 +120,8 @@
 		1814C2D01F3792E20061C52C /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				1814C2D11F3793030061C52C /* MockUserFactory.swift */,
+				1814C2D31F3794D20061C52C /* MockUserFactory.swift */,
+				1814C2D51F3794E50061C52C /* UserFactoryTests.swift */,
 			);
 			name = Factories;
 			sourceTree = "<group>";
@@ -567,8 +570,9 @@
 				18E2D1891F36C3F900594D2A /* MockAPIClient.swift in Sources */,
 				18BDBD241F378C790041BCB1 /* MockUser.swift in Sources */,
 				18E2D18A1F36C40400594D2A /* APIClient.swift in Sources */,
-				1814C2D21F3793030061C52C /* MockUserFactory.swift in Sources */,
+				1814C2D41F3794D20061C52C /* MockUserFactory.swift in Sources */,
 				18BDBD251F378C860041BCB1 /* User.swift in Sources */,
+				1814C2D61F3794E50061C52C /* UserFactoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
