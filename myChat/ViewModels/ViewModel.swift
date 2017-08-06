@@ -20,16 +20,18 @@ class ViewModel: ViewModelProtocol {
     
     fileprivate let disposeBag = DisposeBag()
     
-    init(userRetriever: UserRetrieverProtocol) {
+    init(userRetriever: UserRetrieverProtocol, user: UserProtocol) {
         self.userRetriever = userRetriever
+        
+        user.username.asObservable().subscribe(onNext: { [weak self] username in
+            guard let _self = self else { return }
+            _self.currentUserName.value = username
+        }).addDisposableTo(disposeBag)
+        
         startSession()
     }
     
     private func startSession() {
-        userRetriever.getUser().subscribe( onNext: { [weak self] user in
-            guard let _self = self else { return }
-            guard let user = user else { return }
-            _self.currentUserName.value = user.username.value
-        }).addDisposableTo(disposeBag)
+        userRetriever.getUser()
     }
 }

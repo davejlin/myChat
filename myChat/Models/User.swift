@@ -16,10 +16,6 @@ protocol UserProtocol: class {
 
 class User: UserProtocol {
     let username = Variable<String?>(nil)
-    
-    init(username: String) {
-        self.username.value = username
-    }
 }
 
 class UserMappable: Mappable {

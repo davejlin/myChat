@@ -11,13 +11,14 @@ import XCTest
 class ViewModelTests: XCTestCase {
     
     let mockUserRetriever = MockUserRetriever()
+    let mockUser = MockUser()
     
     var viewModel: ViewModelProtocol!
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        viewModel = ViewModel(userRetriever: mockUserRetriever)
+        viewModel = ViewModel(userRetriever: mockUserRetriever, user: mockUser)
     }
     
     override func tearDown() {

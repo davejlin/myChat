@@ -14,12 +14,12 @@ extension SwinjectStoryboard {
     class func setup() {
         let container = SwinjectStoryboard.defaultContainer
         
-        container.register(NetworkingProtocol.self) {
-            _ in AlamofireWrapper()
+        container.register(UserProtocol.self) {
+            _ in User()
         }
         
-        container.register(UserFactoryProtocol.self) {
-            _ in UserFactory()
+        container.register(NetworkingProtocol.self) {
+            _ in AlamofireWrapper()
         }
         
         container.register(APIClientProtocol.self) {
@@ -27,11 +27,11 @@ extension SwinjectStoryboard {
         }
         
         container.register(UserRetrieverProtocol.self) {
-            r in UserRetriever(apiClient: r.resolve(APIClientProtocol.self)!, userFactory: r.resolve(UserFactoryProtocol.self)!)
+            r in UserRetriever(apiClient: r.resolve(APIClientProtocol.self)!, user: r.resolve(UserProtocol.self)!)
         }
         
         container.register(ViewModelProtocol.self) {
-            r in ViewModel(userRetriever: r.resolve(UserRetrieverProtocol.self)!)
+            r in ViewModel(userRetriever: r.resolve(UserRetrieverProtocol.self)!, user: r.resolve(UserProtocol.self)!)
         }
         
         container.storyboardInitCompleted(ViewController.self) { r, c in

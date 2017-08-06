@@ -11,14 +11,14 @@ import XCTest
 class UserRetrieverTests: XCTestCase {
     
     let mockApiClient = MockAPIClient()
-    let mockUserFactory = MockUserFactory()
+    let mockUser = MockUser()
     
     var userRetriever: UserRetrieverProtocol!
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        userRetriever = UserRetriever(apiClient: mockApiClient, userFactory: mockUserFactory)
+        userRetriever = UserRetriever(apiClient: mockApiClient, user: mockUser)
     }
     
     override func tearDown() {

@@ -11,7 +11,4 @@ import RxSwift
 
 class MockUser: UserProtocol {
     let username = Variable<String?>(nil)
-    init(username: String) {
-        self.username.value = username
-    }
 }

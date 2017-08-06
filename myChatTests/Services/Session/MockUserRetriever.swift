@@ -13,11 +13,7 @@ class MockUserRetriever: UserRetrieverProtocol {
     
     var userToReturn: UserProtocol? = nil
     
-    func getUser() -> Observable<UserProtocol?> {
-        return Observable.create { observer in
-            observer.onNext(self.userToReturn)
-            return Disposables.create()
-        }
+    func getUser() {
     }
 
 }
