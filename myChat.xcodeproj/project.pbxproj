@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180271E61F37A11600FC1C90 /* MockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180271E51F37A11600FC1C90 /* MockViewModel.swift */; };
 		1814C2CE1F3792C40061C52C /* UserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2CD1F3792C40061C52C /* UserFactory.swift */; };
 		1814C2CF1F3792C60061C52C /* UserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2CD1F3792C40061C52C /* UserFactory.swift */; };
 		1814C2D41F3794D20061C52C /* MockUserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2D31F3794D20061C52C /* MockUserFactory.swift */; };
@@ -15,11 +16,14 @@
 		1814C2DA1F3797BD0061C52C /* UserRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2D81F3797BD0061C52C /* UserRetriever.swift */; };
 		1814C2E01F379A230061C52C /* MockUserRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2DF1F379A230061C52C /* MockUserRetriever.swift */; };
 		1814C2E21F379D170061C52C /* UserRetrieverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2E11F379D170061C52C /* UserRetrieverTests.swift */; };
+		1814C2E51F379EDE0061C52C /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2E41F379EDE0061C52C /* ViewModelTests.swift */; };
+		1814C2E81F379F9C0061C52C /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2E71F379F9C0061C52C /* ViewControllerTests.swift */; };
 		189BB1FF1F36C08500074D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BB1FE1F36C08500074D14 /* AppDelegate.swift */; };
 		189BB2041F36C08500074D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189BB2021F36C08500074D14 /* Main.storyboard */; };
 		189BB2061F36C08500074D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189BB2051F36C08500074D14 /* Assets.xcassets */; };
 		189BB2091F36C08500074D14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189BB2071F36C08500074D14 /* LaunchScreen.storyboard */; };
 		189BB21F1F36C08500074D14 /* myChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BB21E1F36C08500074D14 /* myChatUITests.swift */; };
+		18A450241F37A49800ED7F3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FCC7C11F36C5B800CB71A5 /* ViewController.swift */; };
 		18BDBD211F378C5C0041BCB1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBD201F378C5C0041BCB1 /* User.swift */; };
 		18BDBD241F378C790041BCB1 /* MockUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBD231F378C790041BCB1 /* MockUser.swift */; };
 		18BDBD251F378C860041BCB1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBD201F378C5C0041BCB1 /* User.swift */; };
@@ -55,12 +59,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180271E51F37A11600FC1C90 /* MockViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockViewModel.swift; path = ViewModels/MockViewModel.swift; sourceTree = "<group>"; };
 		1814C2CD1F3792C40061C52C /* UserFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserFactory.swift; path = Services/Factories/UserFactory.swift; sourceTree = "<group>"; };
 		1814C2D31F3794D20061C52C /* MockUserFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockUserFactory.swift; path = Services/Factories/MockUserFactory.swift; sourceTree = "<group>"; };
 		1814C2D51F3794E50061C52C /* UserFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserFactoryTests.swift; path = Services/Factories/UserFactoryTests.swift; sourceTree = "<group>"; };
 		1814C2D81F3797BD0061C52C /* UserRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserRetriever.swift; path = Services/Session/UserRetriever.swift; sourceTree = "<group>"; };
 		1814C2DF1F379A230061C52C /* MockUserRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockUserRetriever.swift; path = Services/Session/MockUserRetriever.swift; sourceTree = "<group>"; };
 		1814C2E11F379D170061C52C /* UserRetrieverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserRetrieverTests.swift; path = Services/Session/UserRetrieverTests.swift; sourceTree = "<group>"; };
+		1814C2E41F379EDE0061C52C /* ViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModelTests.swift; path = ViewModels/ViewModelTests.swift; sourceTree = "<group>"; };
+		1814C2E71F379F9C0061C52C /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerTests.swift; path = ViewControllers/ViewControllerTests.swift; sourceTree = "<group>"; };
 		189BB1FB1F36C08500074D14 /* myChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189BB1FE1F36C08500074D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		189BB2031F36C08500074D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -150,6 +157,23 @@
 			name = Session;
 			sourceTree = "<group>";
 		};
+		1814C2E31F379EB10061C52C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1814C2E41F379EDE0061C52C /* ViewModelTests.swift */,
+				180271E51F37A11600FC1C90 /* MockViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		1814C2E61F379F7A0061C52C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1814C2E71F379F9C0061C52C /* ViewControllerTests.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		189BB1F21F36C08500074D14 = {
 			isa = PBXGroup;
 			children = (
@@ -181,8 +205,8 @@
 				18BDBD1F1F378C4B0041BCB1 /* Models */,
 				18FCC7C01F36C4DC00CB71A5 /* Storyboards */,
 				18E2D17E1F36C35100594D2A /* Services */,
-				18FCC7BE1F36C4B200CB71A5 /* ViewModels */,
 				18FCC7BF1F36C4BF00CB71A5 /* ViewControllers */,
+				18FCC7BE1F36C4B200CB71A5 /* ViewModels */,
 			);
 			path = myChat;
 			sourceTree = "<group>";
@@ -192,6 +216,8 @@
 			children = (
 				18BDBD221F378C630041BCB1 /* Models */,
 				18E2D17F1F36C37000594D2A /* Services */,
+				1814C2E61F379F7A0061C52C /* ViewControllers */,
+				1814C2E31F379EB10061C52C /* ViewModels */,
 				189BB2151F36C08500074D14 /* Info.plist */,
 			);
 			path = myChatTests;
@@ -521,12 +547,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-myChatTests/Pods-myChatTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,18 +618,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1814C2E81F379F9C0061C52C /* ViewControllerTests.swift in Sources */,
 				1814C2DA1F3797BD0061C52C /* UserRetriever.swift in Sources */,
 				18FCC7C51F36C6C600CB71A5 /* ViewModel.swift in Sources */,
 				1814C2E21F379D170061C52C /* UserRetrieverTests.swift in Sources */,
+				180271E61F37A11600FC1C90 /* MockViewModel.swift in Sources */,
 				18E2D1881F36C3F900594D2A /* MockAlamofireWrapper.swift in Sources */,
 				18E2D18B1F36C40700594D2A /* AlamofireWrapper.swift in Sources */,
 				1814C2CF1F3792C60061C52C /* UserFactory.swift in Sources */,
 				18E2D1891F36C3F900594D2A /* MockAPIClient.swift in Sources */,
+				18A450241F37A49800ED7F3D /* ViewController.swift in Sources */,
 				18BDBD241F378C790041BCB1 /* MockUser.swift in Sources */,
 				18E2D18A1F36C40400594D2A /* APIClient.swift in Sources */,
 				1814C2D41F3794D20061C52C /* MockUserFactory.swift in Sources */,
 				18BDBD251F378C860041BCB1 /* User.swift in Sources */,
 				1814C2D61F3794E50061C52C /* UserFactoryTests.swift in Sources */,
+				1814C2E51F379EDE0061C52C /* ViewModelTests.swift in Sources */,
 				1814C2E01F379A230061C52C /* MockUserRetriever.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
