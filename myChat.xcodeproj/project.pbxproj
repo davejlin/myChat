@@ -12,6 +12,9 @@
 		189BB2061F36C08500074D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189BB2051F36C08500074D14 /* Assets.xcassets */; };
 		189BB2091F36C08500074D14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189BB2071F36C08500074D14 /* LaunchScreen.storyboard */; };
 		189BB21F1F36C08500074D14 /* myChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BB21E1F36C08500074D14 /* myChatUITests.swift */; };
+		18BDBD211F378C5C0041BCB1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBD201F378C5C0041BCB1 /* User.swift */; };
+		18BDBD241F378C790041BCB1 /* MockUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBD231F378C790041BCB1 /* MockUser.swift */; };
+		18BDBD251F378C860041BCB1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBD201F378C5C0041BCB1 /* User.swift */; };
 		18E2D1811F36C3E300594D2A /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1801F36C3E300594D2A /* MainAssembly.swift */; };
 		18E2D1841F36C3ED00594D2A /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1821F36C3ED00594D2A /* AlamofireWrapper.swift */; };
 		18E2D1851F36C3ED00594D2A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2D1831F36C3ED00594D2A /* APIClient.swift */; };
@@ -55,6 +58,8 @@
 		189BB21A1F36C08500074D14 /* myChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		189BB21E1F36C08500074D14 /* myChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myChatUITests.swift; sourceTree = "<group>"; };
 		189BB2201F36C08500074D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BDBD201F378C5C0041BCB1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		18BDBD231F378C790041BCB1 /* MockUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockUser.swift; path = Models/MockUser.swift; sourceTree = "<group>"; };
 		18E2D1801F36C3E300594D2A /* MainAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainAssembly.swift; path = Services/DIAssemblies/MainAssembly.swift; sourceTree = "<group>"; };
 		18E2D1821F36C3ED00594D2A /* AlamofireWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireWrapper.swift; path = Services/Networking/AlamofireWrapper.swift; sourceTree = "<group>"; };
 		18E2D1831F36C3ED00594D2A /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Services/Networking/APIClient.swift; sourceTree = "<group>"; };
@@ -125,6 +130,7 @@
 				189BB1FE1F36C08500074D14 /* AppDelegate.swift */,
 				189BB2051F36C08500074D14 /* Assets.xcassets */,
 				189BB20A1F36C08500074D14 /* Info.plist */,
+				18BDBD1F1F378C4B0041BCB1 /* Models */,
 				18FCC7C01F36C4DC00CB71A5 /* Storyboards */,
 				18E2D17E1F36C35100594D2A /* Services */,
 				18FCC7BE1F36C4B200CB71A5 /* ViewModels */,
@@ -136,6 +142,7 @@
 		189BB2121F36C08500074D14 /* myChatTests */ = {
 			isa = PBXGroup;
 			children = (
+				18BDBD221F378C630041BCB1 /* Models */,
 				18E2D17F1F36C37000594D2A /* Services */,
 				189BB2151F36C08500074D14 /* Info.plist */,
 			);
@@ -149,6 +156,22 @@
 				189BB2201F36C08500074D14 /* Info.plist */,
 			);
 			path = myChatUITests;
+			sourceTree = "<group>";
+		};
+		18BDBD1F1F378C4B0041BCB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18BDBD201F378C5C0041BCB1 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		18BDBD221F378C630041BCB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18BDBD231F378C790041BCB1 /* MockUser.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		18E2D16E1F36C20400594D2A /* Networking */ = {
@@ -505,6 +528,7 @@
 				18E2D1851F36C3ED00594D2A /* APIClient.swift in Sources */,
 				18FCC7C41F36C6C600CB71A5 /* ViewModel.swift in Sources */,
 				189BB1FF1F36C08500074D14 /* AppDelegate.swift in Sources */,
+				18BDBD211F378C5C0041BCB1 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +540,9 @@
 				18E2D1881F36C3F900594D2A /* MockAlamofireWrapper.swift in Sources */,
 				18E2D18B1F36C40700594D2A /* AlamofireWrapper.swift in Sources */,
 				18E2D1891F36C3F900594D2A /* MockAPIClient.swift in Sources */,
+				18BDBD241F378C790041BCB1 /* MockUser.swift in Sources */,
 				18E2D18A1F36C40400594D2A /* APIClient.swift in Sources */,
+				18BDBD251F378C860041BCB1 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
