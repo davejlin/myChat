@@ -17,13 +17,21 @@ extension SwinjectStoryboard {
         container.register(NetworkingProtocol.self) {
             _ in AlamofireWrapper()
         }
-     
+        
+        container.register(UserFactoryProtocol.self) {
+            _ in UserFactory()
+        }
+        
         container.register(APIClientProtocol.self) {
             r in APIClient(networkAgent: r.resolve(NetworkingProtocol.self)!)
         }
         
+        container.register(UserRetrieverProtocol.self) {
+            r in UserRetriever(apiClient: r.resolve(APIClientProtocol.self)!, userFactory: r.resolve(UserFactoryProtocol.self)!)
+        }
+        
         container.register(ViewModelProtocol.self) {
-            r in ViewModel(apiClient: r.resolve(APIClientProtocol.self)!)
+            r in ViewModel(userRetriever: r.resolve(UserRetrieverProtocol.self)!)
         }
         
         container.storyboardInitCompleted(ViewController.self) { r, c in

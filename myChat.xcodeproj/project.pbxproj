@@ -11,6 +11,10 @@
 		1814C2CF1F3792C60061C52C /* UserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2CD1F3792C40061C52C /* UserFactory.swift */; };
 		1814C2D41F3794D20061C52C /* MockUserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2D31F3794D20061C52C /* MockUserFactory.swift */; };
 		1814C2D61F3794E50061C52C /* UserFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2D51F3794E50061C52C /* UserFactoryTests.swift */; };
+		1814C2D91F3797BD0061C52C /* UserRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2D81F3797BD0061C52C /* UserRetriever.swift */; };
+		1814C2DA1F3797BD0061C52C /* UserRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2D81F3797BD0061C52C /* UserRetriever.swift */; };
+		1814C2E01F379A230061C52C /* MockUserRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2DF1F379A230061C52C /* MockUserRetriever.swift */; };
+		1814C2E21F379D170061C52C /* UserRetrieverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2E11F379D170061C52C /* UserRetrieverTests.swift */; };
 		189BB1FF1F36C08500074D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BB1FE1F36C08500074D14 /* AppDelegate.swift */; };
 		189BB2041F36C08500074D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189BB2021F36C08500074D14 /* Main.storyboard */; };
 		189BB2061F36C08500074D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189BB2051F36C08500074D14 /* Assets.xcassets */; };
@@ -54,6 +58,9 @@
 		1814C2CD1F3792C40061C52C /* UserFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserFactory.swift; path = Services/Factories/UserFactory.swift; sourceTree = "<group>"; };
 		1814C2D31F3794D20061C52C /* MockUserFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockUserFactory.swift; path = Services/Factories/MockUserFactory.swift; sourceTree = "<group>"; };
 		1814C2D51F3794E50061C52C /* UserFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserFactoryTests.swift; path = Services/Factories/UserFactoryTests.swift; sourceTree = "<group>"; };
+		1814C2D81F3797BD0061C52C /* UserRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserRetriever.swift; path = Services/Session/UserRetriever.swift; sourceTree = "<group>"; };
+		1814C2DF1F379A230061C52C /* MockUserRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockUserRetriever.swift; path = Services/Session/MockUserRetriever.swift; sourceTree = "<group>"; };
+		1814C2E11F379D170061C52C /* UserRetrieverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserRetrieverTests.swift; path = Services/Session/UserRetrieverTests.swift; sourceTree = "<group>"; };
 		189BB1FB1F36C08500074D14 /* myChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189BB1FE1F36C08500074D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		189BB2031F36C08500074D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,10 +127,27 @@
 		1814C2D01F3792E20061C52C /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				1814C2D31F3794D20061C52C /* MockUserFactory.swift */,
 				1814C2D51F3794E50061C52C /* UserFactoryTests.swift */,
+				1814C2D31F3794D20061C52C /* MockUserFactory.swift */,
 			);
 			name = Factories;
+			sourceTree = "<group>";
+		};
+		1814C2D71F3797800061C52C /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				1814C2D81F3797BD0061C52C /* UserRetriever.swift */,
+			);
+			name = Session;
+			sourceTree = "<group>";
+		};
+		1814C2DB1F3799C90061C52C /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				1814C2E11F379D170061C52C /* UserRetrieverTests.swift */,
+				1814C2DF1F379A230061C52C /* MockUserRetriever.swift */,
+			);
+			name = Session;
 			sourceTree = "<group>";
 		};
 		189BB1F21F36C08500074D14 = {
@@ -230,6 +254,7 @@
 				18E2D16F1F36C21F00594D2A /* DIAssemblies */,
 				1814C2CC1F37929E0061C52C /* Factories */,
 				18E2D16E1F36C20400594D2A /* Networking */,
+				1814C2D71F3797800061C52C /* Session */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -239,6 +264,7 @@
 			children = (
 				1814C2D01F3792E20061C52C /* Factories */,
 				18E2D1761F36C24A00594D2A /* Networking */,
+				1814C2DB1F3799C90061C52C /* Session */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -555,6 +581,7 @@
 				18E2D1851F36C3ED00594D2A /* APIClient.swift in Sources */,
 				18FCC7C41F36C6C600CB71A5 /* ViewModel.swift in Sources */,
 				189BB1FF1F36C08500074D14 /* AppDelegate.swift in Sources */,
+				1814C2D91F3797BD0061C52C /* UserRetriever.swift in Sources */,
 				18BDBD211F378C5C0041BCB1 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,7 +590,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1814C2DA1F3797BD0061C52C /* UserRetriever.swift in Sources */,
 				18FCC7C51F36C6C600CB71A5 /* ViewModel.swift in Sources */,
+				1814C2E21F379D170061C52C /* UserRetrieverTests.swift in Sources */,
 				18E2D1881F36C3F900594D2A /* MockAlamofireWrapper.swift in Sources */,
 				18E2D18B1F36C40700594D2A /* AlamofireWrapper.swift in Sources */,
 				1814C2CF1F3792C60061C52C /* UserFactory.swift in Sources */,
@@ -573,6 +602,7 @@
 				1814C2D41F3794D20061C52C /* MockUserFactory.swift in Sources */,
 				18BDBD251F378C860041BCB1 /* User.swift in Sources */,
 				1814C2D61F3794E50061C52C /* UserFactoryTests.swift in Sources */,
+				1814C2E01F379A230061C52C /* MockUserRetriever.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

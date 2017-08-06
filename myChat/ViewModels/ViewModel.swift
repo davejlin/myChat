@@ -13,9 +13,9 @@ protocol ViewModelProtocol {
 }
 
 class ViewModel: ViewModelProtocol {
-    let apiClient: APIClientProtocol
+    let userRetriever: UserRetrieverProtocol
     
-    init(apiClient: APIClientProtocol) {
-        self.apiClient = apiClient
+    init(userRetriever: UserRetrieverProtocol) {
+        self.userRetriever = userRetriever
     }
 }
