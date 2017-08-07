@@ -27,6 +27,8 @@ class UserMappable: Mappable {
     
     required init?(map: Map) {
         mapping(map: map)
+        guard let includedArray = included, includedArray.count > 0 else { return nil }
+        guard let _ = includedArray[0].attributes?.username else { return nil }
     }
 
     func mapping(map: Map) {

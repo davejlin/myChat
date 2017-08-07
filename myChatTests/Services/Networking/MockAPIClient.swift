@@ -11,9 +11,9 @@ import RxSwift
 
 class MockAPIClient: APIClientProtocol {
     
-    var userMappableToReturn: UserMappable?
+    var userMappableToReturn = UserMappable(with: "username")
     
-    func getUser() -> Observable<UserMappable?> {
+    func getUser() -> Observable<UserMappable> {
         return Observable.create { observer in
             observer.onNext(self.userMappableToReturn)
             return Disposables.create()

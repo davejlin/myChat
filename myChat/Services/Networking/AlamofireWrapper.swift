@@ -20,9 +20,6 @@ protocol NetworkingProtocol {
 
 class AlamofireWrapper: NetworkingProtocol {
     fileprivate let responseQueue = DispatchQueue(label: "lin.david.myChat.alamoResponseQueue", qos: .utility, attributes: [.concurrent])
-    
-    init() {
-    }
 
     func requestAndResponseJSON(_ httpMethod: Alamofire.HTTPMethod, fullServerAddress: String, headers: [String:String], parameters: [String:Any], encoding: ParameterEncoding, completionHandler: @escaping (DataResponse<Any>) -> Void ) {
         Alamofire.request(fullServerAddress, method: httpMethod, parameters: parameters, encoding: encoding, headers: headers).responseJSON(queue: responseQueue, completionHandler: completionHandler)

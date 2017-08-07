@@ -14,6 +14,7 @@
 		1814C2E21F379D170061C52C /* UserRetrieverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2E11F379D170061C52C /* UserRetrieverTests.swift */; };
 		1814C2E51F379EDE0061C52C /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2E41F379EDE0061C52C /* ViewModelTests.swift */; };
 		1814C2E81F379F9C0061C52C /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814C2E71F379F9C0061C52C /* ViewControllerTests.swift */; };
+		184E7FCD1F37F4F800B2832C /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E7FCC1F37F4F800B2832C /* APIClientTests.swift */; };
 		189BB1FF1F36C08500074D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BB1FE1F36C08500074D14 /* AppDelegate.swift */; };
 		189BB2041F36C08500074D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189BB2021F36C08500074D14 /* Main.storyboard */; };
 		189BB2061F36C08500074D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189BB2051F36C08500074D14 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		1814C2E11F379D170061C52C /* UserRetrieverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserRetrieverTests.swift; path = Services/Session/UserRetrieverTests.swift; sourceTree = "<group>"; };
 		1814C2E41F379EDE0061C52C /* ViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModelTests.swift; path = ViewModels/ViewModelTests.swift; sourceTree = "<group>"; };
 		1814C2E71F379F9C0061C52C /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerTests.swift; path = ViewControllers/ViewControllerTests.swift; sourceTree = "<group>"; };
+		184E7FCC1F37F4F800B2832C /* APIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClientTests.swift; path = Services/Networking/APIClientTests.swift; sourceTree = "<group>"; };
 		189BB1FB1F36C08500074D14 /* myChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189BB1FE1F36C08500074D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		189BB2031F36C08500074D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 		18E2D1761F36C24A00594D2A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				184E7FCC1F37F4F800B2832C /* APIClientTests.swift */,
 				18E2D1861F36C3F900594D2A /* MockAlamofireWrapper.swift */,
 				18E2D1871F36C3F900594D2A /* MockAPIClient.swift */,
 			);
@@ -602,6 +605,7 @@
 				1814C2E81F379F9C0061C52C /* ViewControllerTests.swift in Sources */,
 				1814C2DA1F3797BD0061C52C /* UserRetriever.swift in Sources */,
 				18FCC7C51F36C6C600CB71A5 /* ViewModel.swift in Sources */,
+				184E7FCD1F37F4F800B2832C /* APIClientTests.swift in Sources */,
 				1814C2E21F379D170061C52C /* UserRetrieverTests.swift in Sources */,
 				180271E61F37A11600FC1C90 /* MockViewModel.swift in Sources */,
 				18E2D1881F36C3F900594D2A /* MockAlamofireWrapper.swift in Sources */,

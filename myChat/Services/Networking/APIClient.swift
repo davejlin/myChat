@@ -11,7 +11,7 @@ import RxSwift
 import Alamofire
 
 protocol APIClientProtocol {
-    func getUser() -> Observable<UserMappable?>
+    func getUser() -> Observable<UserMappable>
 }
 
 class APIClient: APIClientProtocol {
@@ -25,7 +25,7 @@ class APIClient: APIClientProtocol {
         createHeaders()
     }
     
-    func getUser() -> Observable<UserMappable?> {
+    func getUser() -> Observable<UserMappable> {
         let fullAddress = Const.GET_USER_URL + Const.GET_USER_ENDPOINT
         let httpMethod = Alamofire.HTTPMethod.post
 
