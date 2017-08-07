@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import RxSwift
+import RxTest
 
 class ViewModelTests: XCTestCase {
     
@@ -15,10 +17,16 @@ class ViewModelTests: XCTestCase {
     
     var viewModel: ViewModelProtocol!
     
+    var testScheduler: TestScheduler!
+    let disposeBag = DisposeBag()
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
         viewModel = ViewModel(userRetriever: mockUserRetriever, user: mockUser)
+
+        testScheduler = TestScheduler(initialClock: 0)
+        testScheduler.start()
     }
     
     override func tearDown() {
@@ -26,8 +34,15 @@ class ViewModelTests: XCTestCase {
         super.tearDown()
     }
     
-    func test() {
-        XCTAssertTrue(true)
+    func testUsernameIsUpdated() {
+        let testObserver = testScheduler.createObserver(String?.self)
+        viewModel.username.asObservable().subscribe(testObserver).addDisposableTo(disposeBag)
+        let expectedUsername = "my username"
+        mockUser.username.value = expectedUsername
+        XCTAssertEqual(expectedUsername, testObserver.events.last?.value.element!, "should update username")
     }
     
+    func testGetUserIsCalledOnInitialization() {
+        XCTAssertTrue(mockUserRetriever.getUserCalled, "should call getUser on init")
+    }
 }

@@ -10,5 +10,5 @@ import Foundation
 import RxSwift
 
 class MockViewModel: ViewModelProtocol {
-    let currentUserName = Variable<String?>(nil)
+    let username = Variable<String?>(nil)
 }

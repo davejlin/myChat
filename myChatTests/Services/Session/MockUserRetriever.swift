@@ -12,8 +12,10 @@ import RxSwift
 class MockUserRetriever: UserRetrieverProtocol {
     
     var userToReturn: UserProtocol? = nil
+    var getUserCalled = false
     
     func getUser() {
+        getUserCalled = true
     }
 
 }

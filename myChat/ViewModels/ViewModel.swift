@@ -10,11 +10,11 @@ import Foundation
 import RxSwift
 
 protocol ViewModelProtocol {
-    var currentUserName: Variable<String?> { get }
+    var username: Variable<String?> { get }
 }
 
 class ViewModel: ViewModelProtocol {
-    let currentUserName = Variable<String?>(nil)
+    let username = Variable<String?>(nil)
     
     let userRetriever: UserRetrieverProtocol
     
@@ -25,7 +25,7 @@ class ViewModel: ViewModelProtocol {
         
         user.username.asObservable().subscribe(onNext: { [weak self] username in
             guard let _self = self else { return }
-            _self.currentUserName.value = username
+            _self.username.value = username
         }).addDisposableTo(disposeBag)
         
         startSession()
