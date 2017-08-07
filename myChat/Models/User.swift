@@ -21,6 +21,10 @@ class User: UserProtocol {
 class UserMappable: Mappable {
     var included: [IncludedMappable]?
     
+    init(with username: String?) {
+        self.included = [IncludedMappable(with: username)]
+    }
+    
     required init?(map: Map) {
         mapping(map: map)
     }
@@ -33,6 +37,10 @@ class UserMappable: Mappable {
 class IncludedMappable: Mappable {
     var attributes: AttributesMappable?
     
+    init(with username: String?) {
+        self.attributes = AttributesMappable(with: username)
+    }
+    
     required init?(map: Map) {
         mapping(map: map)
     }
@@ -44,6 +52,10 @@ class IncludedMappable: Mappable {
 
 class AttributesMappable: Mappable {
     var username: String?
+    
+    init(with username: String?) {
+        self.username = username
+    }
     
     required init?(map: Map) {
         mapping(map: map)
