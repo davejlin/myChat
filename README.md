@@ -15,7 +15,7 @@ In short, both systems MUST communicate with this header:
 Content-Type: application/vnd.api+json
 ```
 ```
-Accept: application/vnd.api+json s
+Accept: application/vnd.api+json
 ```
 
 For more information: [json content negotiation](http://jsonapi.org/format/#content-negotiation)
